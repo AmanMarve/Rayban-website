@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body { 
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    border-left: none;
+    border-top: none;
+}
+
+#back {
+    width: 100%;
+    height: 100vh;
+}
+
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.workingarea {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#nav img {
+    height: 60px;
+}
+
+#nleft,
+#nright {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav a {
+    pointer-events: all;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#hero {
+    position: absolute;
+    top:55%;
+    font: 1em sans-serif;
+    left: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#heroleft {
+    min-width: 50%;
+}
+
+#heroleft .elem{
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+}
+
+#heroleft .elem h1:nth-child(1){
+    top:0;
+}
+
+#heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family:"kajiro";
+    color: #fff;
+    margin-top: 2vw;
+    font-weight: 100;
+    font-size: 9vw;
+}
+
+#heroleft button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family:"kajiro";
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+#heroleft button:hover{
+    color: red;
+    background-color: transparent;
+}
+
+#heroright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #fff;
+    width: 17%;
+}
+
+#heroright p{
+    padding-top: 10px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+#heroright #imgdiv{
+    width: 100%;
+    height: 170px;
+    margin-top:10px;
+    margin-bottom: 30px;
+    background-image: url(https://india.ray-ban.com/media/wysiwyg/Rb_sunglasses_clp_opti/07_Sunglasses_Page_Hero_Banner_Desktop_-_1920x800px.jpg);
+    image-resolution: 200%;
+    background-size: cover;
+    background-position: center;
+}
+
+#heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
+
+#down p{
+    padding-top: 20%;
+}
